@@ -23,7 +23,7 @@ def average_monthly_consumption(monthly_consumptions):
 return sum(monthly_consumptions) / len(monthly_consumptions)
 
 def classify_consumption(consumption_kwh, threshold_kwh):
-"""Classify consumption as 'high' or 'normal'."""
+"""Classify consumption as too high or normal."""
 if consumption_kwh > threshold_kwh:
-return "high"
+return "too high"
 else: return "normal"
