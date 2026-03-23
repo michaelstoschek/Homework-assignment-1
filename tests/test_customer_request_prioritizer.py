@@ -10,14 +10,14 @@ REQUESTS = [
 
 
 def test_count_open_requests():
-assert count_open_requests(REQUESTS) == 3
+    assert count_open_requests(REQUESTS) == 3
 
 
 def test_filter_urgent_requests():
-result = filter_urgent_requests(REQUESTS)
-assert len(result) == 2
+    result = filter_urgent_requests(REQUESTS)
+    assert len(result) == 2
 
 
 def test_classify_request():
-assert classify_request("high") == "urgent"
-assert classify_request("low") == "normal"
+    assert classify_request("high") == "urgent"
+    assert classify_request("low") == "normal"
